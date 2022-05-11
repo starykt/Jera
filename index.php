@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION["id_usuarios"])) {
-    header("Location: /filmes.php");
+    header("Location: /htdocs/filmes.php");
 } // Verifica se foi feito login
 
 
@@ -26,7 +26,7 @@ if(isset($_POST)){
             $_SESSION["id_usuarios"] = $user["id_usuarios"];
             $_SESSION["nome"] = $user["nome"];
             echo "OK";
-            header("Location: /filmes.php");
+            header("Location: /htdocs/filmes.php");
         } else {
             echo "Login ou senha incorretos.";
         } 
