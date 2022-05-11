@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto San', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.total-login {
+    width: 100vw; 
+    height: 100vh;
+    background: rgb(12, 20, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Permite que os itens não fiquem só lado a lado. */
+}
+
+.esquerda-login > h1 {
+    color: rgb(199, 73, 35);
+}
+
+.esquerda-imagem {
+    width: 25vw;
+}
+
+.direita-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telinha-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(25, 41, 88);
+    border-radius: 30px 10px 50px 40px;
+    box-shadow: 0px 10px 40px rgba(8, 8, 8, 0.719);
+}
+
+.telinha-login > h1 {
+    color: rgb(255, 60, 0);
+    font-weight: 800;
+    margin: 0;
+}
+
+.telinha-login > h4 {
+    color: rgb(255, 232, 225);
+    font-weight: 800;
+    margin: 0;
+}
+
+a {
+    color: rgb(255, 60, 0);
+    text-decoration: none;
+}
+
+
+
+.texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.texto > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(30, 59, 146);
+    color:  rgb(255, 215, 203);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(8, 8, 8, 0.719);
+    box-sizing: border-box; /* Não autoriza a div que está dentro ultrapassar a que está por fora. */
+}
+
+.texto > label {
+    color:  rgb(255, 215, 203);
+    margin-bottom: 10px;
+}
+
+.texto > input::placeholder {
+    color:   rgb(255, 215, 203);
+}
+
+.btn-login {
+    width: 70%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: rgb(16, 32, 80);
+    background:rgb(247, 92, 44);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(192, 93, 62);
+}
+
+@media only screen and (max-width: 950px) {
+    .telinha-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .total-login {
+        flex-direction: column;
+    }
+
+    .esquerda-login > h1 {
+        display: none;
+    }
+
+    .esquerda-login {
+        width: 100%;
+        height: auto;
+    }
+    .direita-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .esquerda-imagem {
+        width: 50vw;
+    }
+
+    .telinha-login {
+        width: 90%;
+    }
+}
