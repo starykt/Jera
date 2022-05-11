@@ -15,7 +15,7 @@ if(isset($_POST["cadastrar"])){
         $sql  = "INSERT INTO usuarios(id_usuarios, nome, data_nasc, email, senha) VALUES (null, ? , ?, ?, ?)";
         $stmt= $conexao->prepare($sql);
         $stmt->execute([$nome, $data, $email, $senha]);
-        header("Location: /index.php");
+        header("Location: /htdocs/index.php");
 
       }          
 
